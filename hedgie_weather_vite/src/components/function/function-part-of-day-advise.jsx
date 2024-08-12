@@ -115,7 +115,7 @@ export const FunctionAdviseDay = ({ weather, history }) => {
         adviseDay[0].badWeatherAdvise =
           " Возможен небольшой дождь, стоит захватить зонт.";
         adviseDay[0].umbrella = "Зонт";
-        adviseDay[0].boots = "Кроссовки/Водозащищенная обувь";
+        adviseDay[0].boots = "Кроссовки/Ботинки";
       } else if (
         weatherAdviceDayCods()[day].indexOf(4) != -1 ||
         weatherAdviceDayCods()[day].indexOf(5) != -1

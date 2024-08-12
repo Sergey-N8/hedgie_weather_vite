@@ -1,10 +1,10 @@
 import clsx from "clsx";
 import { BtnInputCity } from "./btn-Input-city";
 
-export function InputCity({ onChange, onClick, className }) {
-  const hendlenCityInput = (e) => {
-    onChange(e.target.value);
-  };
+export function InputCity({ onClick, className, inputRef }) {
+  // const hendlenCityInput = (e) => {
+  //   ref(e.target.value);
+  // };
 
   return (
     <div className={className}>
@@ -16,7 +16,7 @@ export function InputCity({ onChange, onClick, className }) {
         )}
         type="text"
         placeholder="Введите свой город"
-        onChange={hendlenCityInput}
+        ref={inputRef}
       />
       <BtnInputCity onClick={onClick} />
     </div>
